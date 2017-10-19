@@ -1,0 +1,89 @@
+/* flexbox playground
+https://codepen.io/enxaneta/full/adLPwv
+*/
+
+body {
+
+  background-color: #282828;
+
+}
+
+.flex-container{
+    padding:0;
+    margin:0;
+    list-style: none;
+    height: 200px;
+    
+    display: flex;
+    /* space-between, center, flex-end, flex-start*/
+    /*horisontal*/
+    justify-content: space-around;
+    
+    flex-flow: row wrap;   
+    
+    /*vertical*/
+    align-items: center;
+}
+
+/* take 100% of viewport no matter what */
+.header, .footer{
+    flex: 1 100%;
+}
+
+/* 1/(1+2+1)=0.25 for each  */
+.sidebar{
+    flex: 1;
+}
+
+/* 2/(1+2+1)=0.5 for each  */
+.main{
+    flex: 2;
+}
+
+.flex-item{
+    background: tomato;
+    padding: 10px;
+    width: 100px;
+    border: 3px solid rgba(0,0,0,.2);
+    color:white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
